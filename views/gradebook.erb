@@ -1,0 +1,7 @@
+<h1>Gradebook:</h1>
+<% @gradebook.each do |student| %>
+
+    <i><%= student["id"] %></i>: <%= student["first_name"] %> <%= student["last_name"] %> - <%= student["grade"] %>
+    <br/>
+
+<% end %>
